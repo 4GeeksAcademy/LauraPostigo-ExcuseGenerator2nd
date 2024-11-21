@@ -1,1 +1,22 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#excuse {
+  font-size: 1.5em;
+  margin: 0;
+}
