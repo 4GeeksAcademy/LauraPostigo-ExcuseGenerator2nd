@@ -5,26 +5,17 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-let who = ["The dog", "My grandma", "The mailman", "My bird"];
-let action = ["ate", "peed on", "crushed", "broke"];
-let what = ["my homework", "my phone", "the car", "my keys"];
-let when = [
-  "before the class",
-  "when I was sleeping",
-  "while I was exercising",
-  "during my lunch",
-  "while I was praying"
-];
+window.onload = () => {
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
+  let extensions = [".com", ".net", ".org", ".io"];
 
-function generateExcuse() {
-  // Selecciona un elemento aleatorio de cada array
-  let whoPart = who[Math.floor(Math.random() * who.length)];
-  let actionPart = action[Math.floor(Math.random() * action.length)];
-  let whatPart = what[Math.floor(Math.random() * what.length)];
-  let whenPart = when[Math.floor(Math.random() * when.length)];
-  return `${whoPart} ${actionPart} ${whatPart} ${whenPart}.`;
-}
+  let randomDomain =
+    pronoun[Math.floor(Math.random() * pronoun.length)] +
+    adj[Math.floor(Math.random() * adj.length)] +
+    noun[Math.floor(Math.random() * noun.length)] +
+    extensions[Math.floor(Math.random() * extensions.length)];
 
-window.onload = function() {
-  document.getElementById("excuse").innerHTML = generateExcuse();
+  document.querySelector("#domain-name").innerHTML = randomDomain;
 };
