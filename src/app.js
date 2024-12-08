@@ -19,3 +19,6 @@ window.onload = () => {
 
   document.querySelector("#domain-name").innerHTML = randomDomain;
 };
+//  Irene perdón por el retraso, es que como necesitaba espacio en los codespaces, lo borre por error. 
+//  Ahora borre el excuse generator que hicimos por segunda vez y por eso el proyecto tiene ese nombre. 
+//  Y este lo hice rapido porque lo tenia copiado en el cuaderno. Gracias por la espera! 
